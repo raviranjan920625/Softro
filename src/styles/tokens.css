@@ -1,0 +1,27 @@
+:root {
+  --green: #7dde5f;
+  --green-dark: #5cc93d;
+  --green-light: #e8fce1;
+  --navy: #0f1b2d;
+  --navy-light: #1a2e47;
+  --blue: #2563eb;
+  --text: #1e293b;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  --bg: #ffffff;
+  --bg-light: #f8f9fb;
+  --border: #e2e8f0;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-lg: 24px;
+  --shadow: 0 4px 24px rgba(15,27,45,0.08);
+  --shadow-md: 0 8px 40px rgba(15,27,45,0.12);
+  --shadow-lg: 0 20px 60px rgba(15,27,45,0.18);
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --transition: 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+
+@media (prefers-color-scheme: dark) {
+  /* We can add dark mode tokens here if needed, 
+     but the source is light-themed with dark sections */
+}
