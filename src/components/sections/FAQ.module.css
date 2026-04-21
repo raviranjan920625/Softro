@@ -1,0 +1,182 @@
+.inner {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 100px;
+}
+
+.sectionTag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 24px;
+}
+
+.line {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background: var(--blue);
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 48px;
+}
+
+.highlight {
+  color: var(--blue);
+}
+
+.accordion {
+  display: grid;
+  gap: 16px;
+}
+
+.item {
+  background: #fff;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.item.open {
+  border-color: var(--blue);
+  box-shadow: var(--shadow);
+}
+
+.trigger {
+  width: 100%;
+  padding: 24px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  cursor: pointer;
+  text-align: left;
+}
+
+.item.open .trigger {
+  color: var(--blue);
+}
+
+.answer {
+  padding: 0 30px 24px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.sidebar {
+  display: grid;
+  gap: 40px;
+}
+
+.supportCard {
+  background: var(--navy);
+  color: #fff;
+  padding: 50px 40px;
+  border-radius: var(--radius);
+  text-align: center;
+  position: relative;
+}
+
+.supportIcon {
+  width: 70px;
+  height: 70px;
+  background: var(--blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+}
+
+.supportCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.supportCard p {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.contactBtn {
+  background: #fff;
+  color: var(--blue);
+  border: none;
+  padding: 14px 32px;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.contactBtn:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+.callCard {
+  background: #fff;
+  padding: 30px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--border);
+}
+
+.callIcon {
+  width: 54px;
+  height: 54px;
+  background: var(--blue-light);
+  color: var(--blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.callCard span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.callCard strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--navy);
+}
+
+@media (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+  .sidebar {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    grid-template-columns: 1fr;
+  }
+}

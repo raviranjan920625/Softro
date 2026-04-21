@@ -1,0 +1,208 @@
+.section {
+  padding: 80px 0 120px;
+  background: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section tags */
+.sectionTag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.line {
+  display: inline-block;
+  width: 28px;
+  height: 2px;
+  background: var(--blue);
+  border-radius: 2px;
+}
+
+.highlight {
+  color: var(--blue);
+}
+
+/* Culture */
+.culture {
+  margin-bottom: 120px;
+}
+
+.cultureGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.cultureText h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 950;
+  color: var(--navy);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  margin-bottom: 24px;
+}
+
+.cultureText p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.benefitCard {
+  padding: 30px;
+  background: var(--bg-light);
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.04);
+  transition: all 0.3s;
+}
+
+.benefitCard:hover {
+  border-color: var(--blue);
+  transform: translateY(-5px);
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.benefitIcon {
+  width: 44px;
+  height: 44px;
+  background: var(--blue);
+  color: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.benefitCard h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.benefitCard p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* Open Roles */
+.openRoles {
+  padding-top: 80px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+.rolesHeader {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.rolesHeader h2 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--navy);
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+}
+
+.rolesHeader p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.rolesList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.jobRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 40px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 24px;
+  transition: all 0.3s;
+}
+
+.jobRow:hover {
+  border-color: var(--blue);
+  background: var(--bg-light);
+  transform: translateX(10px);
+}
+
+.jobMain h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.jobMeta {
+  display: flex;
+  gap: 24px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.jobMeta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.noJob {
+  text-align: center;
+  padding: 40px;
+  background: var(--bg-light);
+  border-radius: 20px;
+  border: 1px dashed rgba(0,0,0,0.1);
+}
+
+.noJob p {
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.noJob a {
+  color: var(--blue);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.noJob a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .cultureGrid { grid-template-columns: 1fr; gap: 40px; }
+  .benefitCard { padding: 24px; }
+  .jobRow { flex-direction: column; align-items: flex-start; gap: 24px; padding: 24px; }
+}

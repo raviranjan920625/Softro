@@ -1,0 +1,52 @@
+.dropdown {
+  position: absolute;
+  top: 55px; /* Aligned for overlap with centered pill text */
+  left: 0;
+  width: 260px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(4, 13, 33, 0.1);
+  border: 1px solid rgba(45, 91, 255, 0.1);
+  padding: 12px;
+  padding-top: 20px; /* Bridge for hover area */
+  z-index: 1100;
+  animation: slideIn 0.2s ease-out;
+  pointer-events: auto;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  pointer-events: auto;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.2s;
+  pointer-events: auto;
+}
+
+.link:hover {
+  background: var(--blue-light);
+  color: var(--blue);
+  padding-left: 20px;
+}
+
+.chevron {
+  opacity: 0.3;
+}

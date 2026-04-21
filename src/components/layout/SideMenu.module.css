@@ -1,0 +1,220 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 13, 33, 0.4);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 450px;
+  max-width: 90vw;
+  background: #fff;
+  z-index: 2001;
+  padding: 60px 40px;
+  box-shadow: -20px 0 60px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--navy);
+}
+
+.closeBtn:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+.iconCircle {
+  width: 100%;
+  height: 100%;
+  background: var(--blue-light);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.iconCircle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--blue);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 50%, 50% 100%, 0 100%);
+}
+
+.logoText {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.04em;
+}
+
+.description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.contactList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.timeline {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  bottom: 40px;
+  width: 1px;
+  border-left: 1px dashed var(--blue);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.contactItem {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.contactIcon {
+  width: 50px;
+  height: 50px;
+  background: var(--blue-light);
+  border: 1px solid rgba(45, 91, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+.contactInfo span {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.contactInfo strong,
+.contactLink {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--navy);
+  line-height: 1.4;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.contactLink:hover {
+  color: var(--blue);
+}
+
+.footer h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+}
+
+.socials a {
+  width: 44px;
+  height: 44px;
+  background: var(--navy);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.socials a:hover {
+  background: var(--blue);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(45, 91, 255, 0.3);
+}
+
+.quoteBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--blue);
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 32px;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.arrowIcon {
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease;
+}
+
+.quoteBtn:hover .arrowIcon {
+  transform: rotate(0deg);
+}
+
+.quoteBtn:hover {
+  background: var(--navy);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(4, 13, 33, 0.2);
+}

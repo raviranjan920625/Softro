@@ -1,0 +1,161 @@
+.testimonials {
+  padding: 120px 0;
+  background: var(--bg-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  margin-bottom: 80px;
+}
+
+.sectionTag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 24px;
+}
+
+.line {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background: var(--blue);
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--navy);
+  margin-bottom: 32px;
+}
+
+.highlight {
+  color: var(--blue);
+}
+
+.mainArea {
+  position: relative;
+  z-index: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 48px 40px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 460px;
+  box-shadow: var(--shadow);
+}
+
+.activeCard {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.metricLabel {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.text {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.authorImg {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 3px solid #fff;
+  box-shadow: var(--shadow);
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+
+.info span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+
+
+@media (max-width: 1200px) {
+  .grid { grid-template-columns: 1fr; max-width: 600px; margin: 0 auto; }
+  .activeCard { transform: none; }
+  .title { font-size: 2.5rem; }
+}
+
+@media (max-width: 640px) {
+  .grid { 
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 24px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  .grid::-webkit-scrollbar {
+    display: none;
+  }
+  .card { 
+    padding: 30px 24px; 
+    min-height: auto;
+    min-width: 85vw;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+  .text { font-size: 1.05rem; margin-bottom: 30px; }
+}

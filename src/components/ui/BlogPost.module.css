@@ -1,0 +1,280 @@
+.page {
+  background: #fff;
+  padding-bottom: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.header {
+  padding: 120px 0 60px;
+  background: var(--bg-light);
+  text-align: center;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.category {
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.dot {
+  opacity: 0.4;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 950;
+  color: var(--navy);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.authorBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.authorImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.authorImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.authorInfo {
+  text-align: left;
+}
+
+.authorInfo strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.authorInfo span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Banner */
+.banner {
+  margin-top: -40px;
+  margin-bottom: 80px;
+}
+
+.bannerImgWrap {
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 40px 100px rgba(4, 13, 33, 0.15);
+}
+
+.mainImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Content Section */
+.contentSection {
+  padding-bottom: 100px;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 80px;
+  align-items: start;
+}
+
+.body {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.body h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--navy);
+  margin: 60px 0 30px;
+  letter-spacing: -0.03em;
+}
+
+.body p {
+  margin-bottom: 30px;
+}
+
+.body strong {
+  color: var(--navy);
+  font-weight: 800;
+}
+
+/* Sidebar */
+.sidebar {
+  position: sticky;
+  top: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.widget h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  padding: 8px 16px;
+  background: var(--bg-light);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+
+.tag:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+.shareBox h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.shareLinks {
+  display: flex;
+  gap: 12px;
+}
+
+.shareLinks button {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #fff;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.shareLinks button:hover {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+  transform: translateY(-3px);
+}
+
+/* CTA */
+.cta {
+  padding: 100px 0;
+  background: var(--navy);
+  margin-top: 60px;
+  border-radius: 60px 60px 0 0;
+}
+
+.ctaBox {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ctaBox h2 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+}
+
+.ctaBox p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 40px;
+}
+
+.newsletter {
+  display: flex;
+  gap: 12px;
+  background: rgba(255,255,255,0.05);
+  padding: 8px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.newsletter input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.newsletter button {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.newsletter button:hover {
+  background: #fff;
+  color: var(--blue);
+}
+
+@media (max-width: 1024px) {
+  .inner { grid-template-columns: 1fr; gap: 60px; }
+  .sidebar { position: static; }
+  .title { font-size: 2.5rem; }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "cloud-native-architecture",
+    "category": "Cloud & DevOps",
+    "date": "April 18, 2026",
+    "readTime": "8 min read",
+    "title": "Why Every Modern Startup Needs a Cloud-Native Architecture",
+    "excerpt": "Monolithic applications are holding businesses back. We break down why cloud-native architectures with microservices and Kubernetes are now the gold standard for scale.",
+    "tag": "Featured",
+    "color": "#2d5bff"
+  },
+  {
+    "slug": "cloud-native-architecture",
+    "category": "Product Development",
+    "date": "April 12, 2026",
+    "readTime": "6 min read",
+    "title": "From Idea to MVP: Our 8-Week Product Development Sprint",
+    "excerpt": "How we help startups validate their product hypotheses in 8 weeks using lean principles, rapid prototyping, and continuous user feedback loops.",
+    "tag": "Process",
+    "color": "#7c3aed"
+  },
+  {
+    "slug": "cloud-native-architecture",
+    "category": "UI/UX Design",
+    "date": "April 5, 2026",
+    "readTime": "5 min read",
+    "title": "Design Systems: The Hidden Cost of Inconsistency",
+    "excerpt": "Inconsistent UI costs engineering teams thousands of hours annually. Learn how a robust design system pays for itself within 3 months of adoption.",
+    "tag": "Design",
+    "color": "#059669"
+  },
+  {
+    "slug": "cloud-native-architecture",
+    "category": "Mobile Development",
+    "date": "March 28, 2026",
+    "readTime": "7 min read",
+    "title": "React Native vs. Flutter in 2026: A Deep Technical Comparison",
+    "excerpt": "Both frameworks have matured significantly. We compare performance benchmarks, developer experience, and ecosystem health to help you choose the right one.",
+    "tag": "Engineering",
+    "color": "#dc2626"
+  },
+  {
+    "slug": "cloud-native-architecture",
+    "category": "eCommerce",
+    "date": "March 20, 2026",
+    "readTime": "5 min read",
+    "title": "Headless Commerce: Why Shopify Alone Is No Longer Enough",
+    "excerpt": "For high-growth DTC brands, traditional eCommerce platforms create bottlenecks. A headless architecture gives you the speed, flexibility, and conversions you need.",
+    "tag": "Commerce",
+    "color": "#d97706"
+  },
+  {
+    "slug": "cloud-native-architecture",
+    "category": "Engineering",
+    "date": "March 12, 2026",
+    "readTime": "10 min read",
+    "title": "The Pragmatic Guide to Technical Debt: When to Pay It Down",
+    "excerpt": "Not all technical debt is bad. We share the framework we use with our clients to make strategic decisions about refactoring vs. forward momentum.",
+    "tag": "Strategy",
+    "color": "#0891b2"
+  }
+]

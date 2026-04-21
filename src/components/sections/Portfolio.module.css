@@ -1,0 +1,159 @@
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sectionTag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 16px;
+}
+
+.line {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background: var(--blue);
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+.highlight {
+  color: var(--blue);
+}
+
+.grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 40px;
+  padding-bottom: 30px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+}
+
+.grid::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  min-width: 500px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.imgArea {
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(4, 13, 33, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card:hover .img {
+  transform: scale(1.05);
+}
+
+.actionBtn {
+  width: 60px;
+  height: 60px;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: scale(0.8);
+  transition: var(--transition);
+}
+
+.card:hover .actionBtn {
+  transform: scale(1);
+}
+
+.info {
+  padding: 30px;
+  background: var(--navy);
+  color: #fff;
+}
+
+.projectTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.4;
+  transition: var(--transition);
+}
+
+.projectTitle:hover {
+  color: var(--blue);
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cat {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer {
+  margin-top: 60px;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .card {
+    min-width: 85vw;
+  }
+}

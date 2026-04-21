@@ -1,0 +1,75 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+  height: 52px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  gap: 8px; /* For the arrow icon */
+}
+
+.arrowIcon {
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease;
+}
+
+.btn:hover .arrowIcon {
+  transform: rotate(0deg);
+}
+
+.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.primary:hover {
+  background: #333;
+}
+
+.outline {
+  background: transparent;
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
+}
+
+.outline:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.ghost {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+.ghost:hover {
+  background: var(--bg-light);
+  border-color: var(--secondary-light);
+}
+
+.white {
+  background: #fff;
+  color: #000;
+}
+
+.white:hover {
+  background: #f4f4f4;
+}
+
+.lg {
+  height: 60px;
+  font-size: 1rem;
+  padding: 0 40px;
+}
+
+.fullWidth {
+  width: 100%;
+}

@@ -1,0 +1,27 @@
+.animatedLink {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  /* Reset some basic link properties, these can be overridden via className */
+  font-weight: inherit;
+  color: inherit;
+}
+
+.text {
+  /* Some existing links rely on layout spacing, keep inline block or flex for transformation */
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.arrowIcon {
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease;
+}
+
+/* On parent hover, rotate the arrow */
+.animatedLink:hover .arrowIcon {
+  transform: rotate(0deg);
+}

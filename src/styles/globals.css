@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: var(--font);
+  font-family: var(--font-outfit), sans-serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
@@ -47,15 +47,12 @@ ul {
 }
 
 .bg-dark {
-  background: var(--navy);
+  background: var(--primary);
   color: white;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--green-dark) 0%, #3b82f6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
 }
 
 /* Common UTILS */

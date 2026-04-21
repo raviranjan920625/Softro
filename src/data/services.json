@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "product-development",
+    "icon": "Code2",
+    "title": "Product Development",
+    "desc": "From concept to production-ready software, we handle the full lifecycle — architecture, engineering, and deployment.",
+    "href": "/services/product-development",
+    "color": "#2d5bff"
+  },
+  {
+    "slug": "ui-ux-design",
+    "icon": "Palette",
+    "title": "UI/UX Design",
+    "desc": "We design interfaces that convert. User research, wireframes, prototypes, and polished high-fidelity designs.",
+    "href": "/services/ui-ux-design",
+    "color": "#7c3aed"
+  },
+  {
+    "slug": "ecommerce-solutions",
+    "icon": "ShoppingCart",
+    "title": "eCommerce Solutions",
+    "desc": "Custom storefronts, headless commerce, Shopify Plus development, and robust ERP/CRM integrations.",
+    "href": "/services/ecommerce-solutions",
+    "color": "#d97706"
+  },
+  {
+    "slug": "mobile-development",
+    "icon": "Smartphone",
+    "title": "Mobile App Development",
+    "desc": "High-performance iOS and Android apps built with React Native or Flutter. Native UX and deep platform integrations.",
+    "href": "/services/mobile-development",
+    "color": "#059669"
+  },
+  {
+    "slug": "cloud-devops",
+    "icon": "Cloud",
+    "title": "Cloud & DevOps",
+    "desc": "Scalable cloud infrastructure on AWS, GCP, or Azure. CI/CD pipelines and containerization with Kubernetes.",
+    "href": "/services/cloud-devops",
+    "color": "#0891b2"
+  },
+  {
+    "slug": "technical-support-qa",
+    "icon": "ShieldCheck",
+    "title": "Technical Support & QA",
+    "desc": "Ongoing retainer support, performance audits, automated testing suites, and proactive maintenance.",
+    "href": "/services/technical-support-qa",
+    "color": "#dc2626"
+  }
+]
